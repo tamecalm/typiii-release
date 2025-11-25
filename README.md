@@ -64,6 +64,8 @@ Enter when prompted:
 - ✅ **Session Persistence** - Login once, run forever
 - ✅ **2FA Support** - Works with two-factor authentication
 - ✅ **Proxy Support** - SOCKS5, SOCKS4, HTTP proxy with authentication
+- ✅ **Statistics** - Track detections, replies, errors, keyword frequency
+- ✅ **File Logging** - All events logged to `logs/` folder
 - ✅ **Cross-Platform** - Windows, Linux, macOS, Android
 - ✅ **No Dependencies** - Single binary, no installation needed
 - ✅ **Colored Logs** - Easy to read console output
@@ -71,12 +73,17 @@ Enter when prompted:
 ## How It Works
 
 ```
+[12:34:56] INFO Logging to: logs/typiii_2024-11-25.log
 [12:34:56] INFO Starting Telegram client...
 [12:34:57] SUCCESS Session loaded - Already authorized
 [12:34:57] INFO Listening for messages in chat: @gamechat
 
 [12:35:10] 🎯 Keyword detected: rice
 [12:35:10] ✓ Auto-reply sent: rice
+
+^C
+[12:40:00] INFO Session stats: Uptime: 5m 4s | Scanned: 42 | Detected: 3 | Sent: 3 | Errors: 0
+[12:40:00] SUCCESS Userbot stopped gracefully
 ```
 
 ## Proxy Configuration

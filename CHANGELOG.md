@@ -5,6 +5,20 @@ All notable changes to TYPIII will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [1.2.0] - 2024-11-25
+
+### Added
+- **Statistics Tracking**: Track messages scanned, keywords detected, replies sent, errors
+- **File Logging**: All events logged to `logs/typiii_YYYY-MM-DD.log`
+- **Stats Export**: Session stats saved to `logs/stats.json` on exit
+- Keyword frequency tracking (top keywords)
+- Session uptime tracking
+
+### Changed
+- Stats summary displayed on graceful shutdown
+
+---
+
 ## [1.1.0] - 2024-11-25
 
 ### Added
@@ -55,6 +69,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 | Version | Date | Description |
 |---------|------|-------------|
+| 1.2.0 | 2024-11-25 | Statistics tracking and file logging |
 | 1.1.0 | 2024-11-25 | Proxy support (SOCKS5/SOCKS4/HTTP) |
 | 1.0.0 | 2024-11-24 | Initial release |
 
@@ -63,10 +78,10 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ## Upcoming Features (Planned)
 
 - [x] ~~Proxy support~~ (Added in v1.1.0)
+- [x] ~~Statistics and logging to file~~ (Added in v1.2.0)
 - [ ] Multiple chat monitoring
 - [ ] Custom response delay
 - [ ] Regex pattern customization
-- [ ] Statistics and logging to file
 
 ---
 
