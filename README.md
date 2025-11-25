@@ -11,13 +11,20 @@ TYPIII is a Telegram userbot designed to test anticheat systems in fastest-finge
 
 ## Downloads
 
-| Platform | Architecture | Download |
+Download the latest release from the [**Releases Page**](../../releases/latest).
+
+| Platform | Architecture | Filename |
 |----------|--------------|----------|
-| Windows | 64-bit | [typiii-windows-amd64.exe](dist/typiii-windows-amd64.exe) |
-| Linux | 64-bit | [typiii-linux-amd64](dist/typiii-linux-amd64) |
-| macOS | Apple Silicon | [typiii-macos-arm64](dist/typiii-macos-arm64) |
-| Android/Termux | ARM64 | [typiii-android-arm64](dist/typiii-android-arm64) |
-| Android/Termux | ARM32 | [typiii-android-arm](dist/typiii-android-arm) |
+| Windows | 64-bit | `typiii-windows-amd64.exe` |
+| Windows | 32-bit | `typiii-windows-386.exe` |
+| Linux | 64-bit | `typiii-linux-amd64` |
+| Linux | 32-bit | `typiii-linux-386` |
+| macOS | Intel | `typiii-macos-amd64` |
+| macOS | Apple Silicon | `typiii-macos-arm64` |
+| Android/Termux | ARM64 | `typiii-android-arm64` |
+| Android/Termux | ARM32 | `typiii-android-arm` |
+
+> **Note:** After downloading, Linux/macOS/Android users need to make the file executable with `chmod +x <filename>`
 
 ## Quick Start
 
@@ -65,6 +72,8 @@ Enter when prompted:
 - ✅ **2FA Support** - Works with two-factor authentication
 - ✅ **Proxy Support** - SOCKS5, SOCKS4, HTTP proxy with authentication
 - ✅ **Custom Patterns** - Define your own regex detection patterns
+- ✅ **Plugin System** - Extensible architecture for custom handlers
+- ✅ **Interactive TUI** - Real-time status bar with live stats
 - ✅ **Statistics** - Track detections, replies, errors, keyword frequency
 - ✅ **File Logging** - All events logged to `logs/` folder
 - ✅ **Cross-Platform** - Windows, Linux, macOS, Android
@@ -156,6 +165,10 @@ See [SECURITY.md](SECURITY.md) for security guidelines.
 ## Changelog
 
 See [CHANGELOG.md](CHANGELOG.md) for version history.
+
+## Roadmap
+
+See [ROADMAP.md](ROADMAP.md) for planned features and development priorities.
 
 ## License
 

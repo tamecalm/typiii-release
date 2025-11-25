@@ -5,6 +5,21 @@ All notable changes to TYPIII will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [1.4.0] - 2024-11-25
+
+### Added
+- **Interactive TUI**: Real-time status bar showing uptime, scans, detections, replies, errors
+- **Plugin System**: Extensible architecture for custom message handlers
+- Built-in plugins: RateLimitPlugin, KeywordFilterPlugin, LoggingPlugin
+- Plugin enable/disable support
+- Plugin lifecycle hooks (OnStart, OnStop, OnMessage)
+
+### Changed
+- Handler now supports plugin processing pipeline
+- Client accepts plugin manager for extensibility
+
+---
+
 ## [1.3.0] - 2024-11-25
 
 ### Added
@@ -83,6 +98,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 | Version | Date | Description |
 |---------|------|-------------|
+| 1.4.0 | 2024-11-25 | Interactive TUI and plugin system |
 | 1.3.0 | 2024-11-25 | Custom regex pattern support |
 | 1.2.0 | 2024-11-25 | Statistics tracking and file logging |
 | 1.1.0 | 2024-11-25 | Proxy support (SOCKS5/SOCKS4/HTTP) |
@@ -90,13 +106,14 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ---
 
-## Upcoming Features (Planned)
+## Upcoming Features
 
-- [x] ~~Proxy support~~ (Added in v1.1.0)
-- [x] ~~Statistics and logging to file~~ (Added in v1.2.0)
-- [x] ~~Regex pattern customization~~ (Added in v1.3.0)
+For a comprehensive list of planned features, see [ROADMAP.md](ROADMAP.md).
+
+**Next up:**
 - [ ] Multiple chat monitoring
 - [ ] Custom response delay
+- [ ] Response customization
 
 ---
 
