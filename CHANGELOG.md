@@ -5,6 +5,18 @@ All notable changes to TYPIII will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [1.1.0] - 2024-11-25
+
+### Added
+- **Proxy Support**: SOCKS5, SOCKS4, and HTTP CONNECT proxy support
+- Proxy configuration saved to config file
+- Optional proxy authentication (username/password)
+
+### Changed
+- Configuration now prompts for proxy settings
+
+---
+
 ## [1.0.0] - 2024-11-24
 
 ### Added
@@ -43,18 +55,18 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 | Version | Date | Description |
 |---------|------|-------------|
+| 1.1.0 | 2024-11-25 | Proxy support (SOCKS5/SOCKS4/HTTP) |
 | 1.0.0 | 2024-11-24 | Initial release |
 
 ---
 
 ## Upcoming Features (Planned)
 
-- [ ] Configuration file support (config.json)
+- [x] ~~Proxy support~~ (Added in v1.1.0)
 - [ ] Multiple chat monitoring
 - [ ] Custom response delay
 - [ ] Regex pattern customization
 - [ ] Statistics and logging to file
-- [ ] Proxy support
 
 ---
 

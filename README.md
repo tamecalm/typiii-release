@@ -63,6 +63,7 @@ Enter when prompted:
 - ✅ **Auto-Reply** - Sends the keyword automatically
 - ✅ **Session Persistence** - Login once, run forever
 - ✅ **2FA Support** - Works with two-factor authentication
+- ✅ **Proxy Support** - SOCKS5, SOCKS4, HTTP proxy with authentication
 - ✅ **Cross-Platform** - Windows, Linux, macOS, Android
 - ✅ **No Dependencies** - Single binary, no installation needed
 - ✅ **Colored Logs** - Easy to read console output
@@ -77,6 +78,25 @@ Enter when prompted:
 [12:35:10] 🎯 Keyword detected: rice
 [12:35:10] ✓ Auto-reply sent: rice
 ```
+
+## Proxy Configuration
+
+TYPIII supports connecting through a proxy. When prompted during setup:
+
+```
+Enable proxy? (y/N): y
+Proxy type (socks5/socks4/http) [socks5]: socks5
+Proxy host (IP or hostname): 127.0.0.1
+Proxy port: 1080
+Username (leave empty if none): 
+```
+
+**Supported proxy types:**
+- **SOCKS5** - Recommended, supports authentication
+- **SOCKS4** - Legacy support
+- **HTTP** - HTTP CONNECT tunnel
+
+Proxy settings are saved in `session/config.json` for future runs.
 
 ## Finding Your Chat ID
 
