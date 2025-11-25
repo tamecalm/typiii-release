@@ -1,0 +1,35 @@
+# Build & Distribution
+dist/
+build/
+bin/
+*.exe
+*.dll
+*.so
+*.dylib
+
+# Go
+*.test
+*.out
+go.sum
+
+# Logs
+logs/
+
+# Session data
+session/
+*.json
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Binaries (platform-specific)
+typiii-*
+!typiii-release/

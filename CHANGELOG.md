@@ -5,6 +5,20 @@ All notable changes to TYPIII will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [1.3.0] - 2024-11-25
+
+### Added
+- **Custom Regex Patterns**: Define your own detection patterns
+- Multiple patterns support (match any pattern)
+- Pattern enable/disable toggle
+- Configurable capture groups
+- Patterns saved to config file
+
+### Changed
+- Handler now uses pattern.Config instead of hardcoded regex
+
+---
+
 ## [1.2.0] - 2024-11-25
 
 ### Added
@@ -69,6 +83,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 | Version | Date | Description |
 |---------|------|-------------|
+| 1.3.0 | 2024-11-25 | Custom regex pattern support |
 | 1.2.0 | 2024-11-25 | Statistics tracking and file logging |
 | 1.1.0 | 2024-11-25 | Proxy support (SOCKS5/SOCKS4/HTTP) |
 | 1.0.0 | 2024-11-24 | Initial release |
@@ -79,9 +94,9 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 - [x] ~~Proxy support~~ (Added in v1.1.0)
 - [x] ~~Statistics and logging to file~~ (Added in v1.2.0)
+- [x] ~~Regex pattern customization~~ (Added in v1.3.0)
 - [ ] Multiple chat monitoring
 - [ ] Custom response delay
-- [ ] Regex pattern customization
 
 ---
 

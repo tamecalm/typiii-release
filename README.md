@@ -64,6 +64,7 @@ Enter when prompted:
 - ✅ **Session Persistence** - Login once, run forever
 - ✅ **2FA Support** - Works with two-factor authentication
 - ✅ **Proxy Support** - SOCKS5, SOCKS4, HTTP proxy with authentication
+- ✅ **Custom Patterns** - Define your own regex detection patterns
 - ✅ **Statistics** - Track detections, replies, errors, keyword frequency
 - ✅ **File Logging** - All events logged to `logs/` folder
 - ✅ **Cross-Platform** - Windows, Linux, macOS, Android
@@ -104,6 +105,30 @@ Username (leave empty if none):
 - **HTTP** - HTTP CONNECT tunnel
 
 Proxy settings are saved in `session/config.json` for future runs.
+
+## Custom Patterns
+
+You can define custom regex patterns to detect different message formats:
+
+```
+Customize detection patterns? (y/N): y
+
+Current patterns:
+  1. [enabled] type_emoji: (?i)🎯\s*type\s*:\s*(\S+)
+  2. [enabled] type_plain: (?i)^type\s*:\s*(\S+)
+
+Add custom pattern? (y/N): y
+Pattern name: my_pattern
+Regex pattern (use parentheses for capture group): (?i)answer:\s*(\w+)
+Capture group number [1]: 1
+✓ Pattern added: my_pattern
+```
+
+**Default patterns:**
+- `type_emoji` - Matches `🎯 type: word`
+- `type_plain` - Matches `type: word`
+
+Patterns are saved in `session/config.json` and can be edited directly.
 
 ## Finding Your Chat ID
 
